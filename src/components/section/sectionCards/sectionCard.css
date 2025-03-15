@@ -1,0 +1,126 @@
+.Card h3 {
+  font-size: 1.4rem;
+}
+.Card p {
+  margin-top: -10px;
+  margin-bottom: 0;
+  max-width: 270px;
+}
+.Card-Image {
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+  margin-bottom: -12px;
+  background: linear-gradient(-10deg, #c206e8 30%, #540d6e, #3e06f5);
+}
+.imgLog {
+  display: block;
+  width: 100%; /* Full width within its container */
+  border-radius: 12px; /* Rounded corners for the image */
+}
+
+.Card-container {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 290px));
+  gap: 12px;
+  padding: 2rem;
+}
+
+.Card {
+  border-radius: 15px;
+  clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 55px, 100% 100%, 0% 100%);
+  border: 1px solid transparent;
+  padding: 1rem;
+  padding-bottom: 0;
+  color: white;
+  background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+    linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box;
+}
+
+@media (max-width: 768px) {
+  .curved-line {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    height: 3.9rem;
+    width: 105%;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .Card-container {
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 200px));
+    gap: 10px;
+    padding: 2rem;
+  }
+  .Card {
+    display: block;
+    height: auto;
+    border-radius: 15px;
+
+    clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 55px, 100% 100%, 0% 100%);
+    border: 1px solid transparent;
+    background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+      linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box;
+    padding: 1rem;
+    padding-bottom: 0;
+    color: white;
+    background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+      linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box;
+    box-shadow: 0 1 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7, 0 0 30px #230bf9;
+  }
+  .Card-Image {
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    margin-bottom: -12px;
+    background: linear-gradient(-10deg, #c206e8 30%, #540d6e, #3e06f5);
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: 0.75rem;
+  }
+
+  .Card-container {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(150px, 1fr)
+    ); /* Adjust grid layout */
+    gap: 1rem; /* Increase spacing between cards */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .Card {
+    border-radius: 10px;
+    clip-path: polygon(0 0, calc(100% - 60px) 0, 100% 55px, 100% 100%, 0% 100%);
+    border: 1px solid transparent;
+    padding: 0.8rem;
+    padding-bottom: 0;
+    color: white;
+    background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+      linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box;
+  }
+
+  .Card h3 {
+    font-size: 0.8rem;
+  }
+
+  .Card p {
+    font-size: 0.65rem; /* Adjust paragraph text size */
+  }
+
+  .Card-Image {
+    width: 20px; /* Reduce image size */
+    height: 20px;
+    margin-bottom: -8px;
+  }
+}

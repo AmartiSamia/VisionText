@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"); /* Import the Outfit font */
+
+body {
+  font-family: "Outfit", serif !important;
+  background: linear-gradient(
+    to right,
+    #191d39 10%,
+    #4d2438 30%,
+    #552845 30%,
+    #1d1d66 30%
+  );
+  color: white;
+  overflow-x: hidden;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-size: 400% 400%;
+}
+
+html {
+  scroll-behavior: smooth;
+}

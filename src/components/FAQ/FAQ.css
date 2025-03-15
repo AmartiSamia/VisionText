@@ -1,0 +1,219 @@
+.faqSection {
+  margin-left: 8%;
+  color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 8px;
+  display: flex;
+  gap: 96px;
+}
+
+.faqHeader h1 {
+  max-width: 400px;
+  line-height: 1.2;
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+.faqHeader {
+  display: flex; /* Activer flexbox */
+  flex-direction: column; /* Stacker les éléments verticalement */
+  align-items: center; /* Centrer horizontalement */
+  justify-content: center; /* Centrer verticalement */
+  text-align: center;
+}
+.faqHeader p {
+  font-size: 1rem;
+  color: #aaaaaa;
+  margin-bottom: 30px;
+  max-width: 420px;
+}
+
+.faqList {
+  width: 70%;
+  margin: 0 5%;
+  display: flex; /* Activer flexbox */
+  flex-direction: column; /* Stacker les éléments verticalement */
+  align-items: center; /* Centrer horizontalement */
+  justify-content: center; /* Centrer verticalement */
+  text-align: center;
+}
+
+.faqItem {
+  background-color: #2a2a3d;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  background: linear-gradient(#2a2a3d, #2a2a3d) padding-box, #48066a border-box; /* Border gradient */
+}
+
+.faqItem.active {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.faqQuestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.faqItem:hover {
+  background-color: #2a2a3d;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.faqIcon {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.faqAnswer {
+  background-color: #2a2a3d;
+  padding: 15px 20px;
+  font-size: 1rem;
+  color: #cccccc;
+}
+@media (max-width: 1024px) {
+  .faqSection {
+    margin-left: 5%;
+    flex-direction: column; /* Stacker les éléments verticalement */
+    gap: 30px;
+  }
+
+  .faqHeader {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .faqHeader h1 {
+    font-size: 2rem; /* Réduire la taille du titre */
+  }
+
+  .faqHeader p {
+    font-size: 0.9rem; /* Réduire la taille du texte */
+  }
+
+  .faqList {
+    width: 90%; /* Réduire la largeur de la liste */
+    margin: 0 auto; /* Centrer la liste */
+  }
+
+  .faqItem {
+    padding: 0.5rem; /* Réduire le padding pour économiser de l'espace */
+  }
+
+  .faqQuestion {
+    font-size: 1rem; /* Réduire la taille de la question */
+  }
+
+  .faqAnswer {
+    font-size: 0.9rem; /* Réduire la taille du texte des réponses */
+  }
+}
+
+@media (max-width: 768px) {
+  .faqSection {
+    margin-left: 0;
+    padding: 20px 10px; /* Réduire les marges et les paddings */
+  }
+
+  .faqHeader h1 {
+    font-size: 1.9rem;
+  }
+  .faqHeader {
+    display: flex; /* Activer flexbox */
+    flex-direction: column; /* Stacker les éléments verticalement */
+    align-items: center; /* Centrer horizontalement */
+    justify-content: center; /* Centrer verticalement */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px;
+  }
+
+  .faqHeader p {
+    font-size: 1rem;
+    color: #aaaaaa;
+    max-width: 420px; /* Limite la largeur du paragraphe */
+    margin: 0; /* Supprime les marges externes */
+  }
+
+  .faqList {
+    width: 90%; /* Prendre toute la largeur */
+    display: flex; /* Activer flexbox */
+    flex-direction: column; /* Stacker les éléments verticalement */
+    align-items: center; /* Centrer horizontalement */
+    justify-content: center; /* Centrer verticalement */
+    text-align: center; /* Ce
+  }
+
+  .faqItem {
+    padding: 0.6rem;
+    width: 90%;
+    /* margin: -15px 4px 19px 19px; */
+  }
+
+  .faqQuestion {
+    font-size: 0.9rem; /* Texte plus petit pour les questions */
+  }
+
+  .faqAnswer {
+    font-size: 0.8rem; /* Texte plus petit pour les réponses */
+  }
+}
+
+@media (max-width: 480px) {
+  .faqSection {
+    padding: 10px 5px;
+  }
+
+  .faqHeader h1 {
+    font-size: 1.5rem;
+    max-width: 250px;
+  }
+
+  .faqHeader p {
+    font-size: 0.9rem;
+    text-align: center;
+    display: block;
+    max-width: 350px;
+    margin-left: 12px;
+  }
+
+  .faqList {
+    margin-top: -28px;
+    gap: 5px;
+  }
+
+  .faqItem {
+    margin: 9px;
+    padding: 0.4rem;
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  .faqQuestion {
+    font-size: 0.8rem;
+  }
+
+  .faqAnswer {
+    font-size: 0.8rem;
+  }
+
+  .faqIcon {
+    font-size: 1rem; /* Réduire la taille de l'icône */
+  }
+}

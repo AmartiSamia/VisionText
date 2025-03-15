@@ -1,0 +1,116 @@
+h1 {
+  font-size: 3.5rem;
+  max-width: 600px;
+  display: inline-block;
+}
+header p {
+  margin-top: -15px;
+  display: inline-block;
+  max-width: 550px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+header h1 {
+  letter-spacing: 2px;
+}
+
+h1 span {
+  position: relative;
+}
+header {
+  margin-top: -17px;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.curved-line {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  height: 4.9rem;
+  width: 105%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.ButtonGetStarted,
+.ButtonWatchDemo {
+  padding: 0.8rem 1.6rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.ButtonGetStarted {
+  background: linear-gradient(170deg, #c206e8 30%, #540d6e, #3e06f5);
+}
+.ButtonGetStarted:hover,
+.ButtonWatchDemo:hover {
+  background: white;
+  color: #2c065d;
+  transform: scale(1.1);
+}
+.ButtonWatchDemo {
+  background: transparent;
+  border: 2px solid #870bfb;
+}
+.image-section img {
+  display: block;
+  margin: 2rem auto;
+  border-radius: 20px;
+  max-width: 750px;
+  background: linear-gradient(135deg, #230bf9, #fb09e7, #fae505);
+  padding: 2px;
+}
+@media (max-width: 768px) {
+  header p {
+    margin-top: 1px;
+    font-size: 0.9rem;
+    max-width: 480px;
+  }
+
+  h1 {
+    font-size: 2.3rem;
+    max-width: 250px;
+  }
+  h1 span {
+    position: relative;
+  }
+
+  .curved-line {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    height: 3.9rem;
+    width: 105%;
+  }
+  .buttons a {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .image-section img {
+    max-width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  p {
+    font-size: 0.75rem;
+  }
+  .image-section img {
+    display: block;
+    margin: 2rem auto;
+    border-radius: 20px;
+    max-width: 350px;
+    background: linear-gradient(135deg, #230bf9, #fb09e7, #fae505);
+    padding: 2px;
+  }
+}

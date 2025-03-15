@@ -1,0 +1,191 @@
+a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+  list-style: none;
+}
+.user-info {
+  display: flex;
+  text-align: center;
+  align-content: center;
+}
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.user-info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-right: auto;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.app-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #43388c;
+}
+
+ul li {
+  margin: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+ul li a:hover {
+  color: #c206e8;
+  cursor: pointer;
+}
+.link-button2 {
+  color: white;
+  text-decoration: none;
+  border: 2px solid #43388c;
+  padding: 5px 12px 5px 12px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.3s ease, color 0.3s ease;
+  -webkit-transition: all 0.3s ease, color 0.3s ease;
+  -moz-transition: all 0.3s ease, color 0.3s ease;
+  -ms-transition: all 0.3s ease, color 0.3s ease;
+  -o-transition: all 0.3s ease, color 0.3s ease;
+}
+.link-button2:hover {
+  background-color: #43388c;
+  color: white;
+}
+.link-button2:focus {
+  outline: none;
+  box-shadow: 0 0 5px #43388c;
+}
+nav {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #43388c;
+  cursor: pointer;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px; /* Ensure the padding is consistent */
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.message {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.message.success {
+  color: green;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+
+.message.error {
+  color: red;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .message.success {
+    color: green;
+    margin-top: 25px;
+    margin-bottom: -5px;
+    font-weight: bold;
+  }
+
+  .message.error {
+    color: red;
+    margin-top: 25px;
+    margin-bottom: -5px;
+    font-weight: bold;
+  }
+  ul.nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+
+  ul.nav-links.active {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .app-name {
+    font-size: 16px;
+    display: none;
+  }
+
+  .message.success {
+    color: green;
+    margin-top: 25px;
+    margin-bottom: -5px;
+    font-weight: bold;
+  }
+
+  .message.error {
+    color: red;
+    margin-top: 25px;
+    margin-bottom: -5px;
+    font-weight: bold;
+  }
+}

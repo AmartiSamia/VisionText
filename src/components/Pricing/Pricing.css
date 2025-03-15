@@ -1,0 +1,256 @@
+.pricing {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.pricing_head {
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  flex-direction: column;
+}
+.pricing_title {
+  font-size: 2.3rem;
+}
+.pricing_head p {
+  margin-top: -2%;
+  font-size: 18px;
+}
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Pricing Section */
+.pricing {
+  text-align: center;
+  padding: 20px;
+}
+
+.pricing_head {
+  margin-bottom: 20px;
+}
+.pricing_head p {
+  margin-top: 10px;
+}
+
+.pricing_title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.pricingCardsSection {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.pricingCard {
+  background-color: #111026;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+    linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box;
+  border: 1px solid transparent;
+}
+
+.pricingCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7, 0 0 30px #230bf9; /* Shadow */
+}
+
+.pricingCardHead h2 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.pricingCardDescription {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+hr {
+  margin: 20px 0;
+  height: 1px;
+  border: 1px solid #333;
+  background: linear-gradient(135deg, #023bf8, #c206e8, #fae505);
+}
+
+.sentence {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.sectionImg {
+  width: 16px;
+  height: 16px;
+  background-color: #5b29f8;
+  border-radius: 50%;
+  margin-right: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.Price {
+  font-size: 1rem;
+  color: #5b29f8;
+  margin: 20px 0;
+}
+
+.Price span {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.buttonGetStarted {
+  background-color: #4a4a8a;
+  color: #fff;
+  border: none;
+  width: 80%;
+  padding: 0.8rem 1.6rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+    linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box; /* Border gradient */
+}
+
+.buttonGetStarted:hover {
+  background: white;
+  color: #2c065d;
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .pricing {
+    padding: 20px;
+  }
+
+  .pricing_head {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .pricing_title {
+    font-size: 1.5rem; /* Réduire la taille du titre */
+    margin-bottom: 5px;
+  }
+
+  .pricingCardsSection {
+    flex-direction: column; /* Disposer les cartes en colonne */
+    gap: 10px; /* Réduire l'écart entre les cartes */
+    padding: 20px; /* Réduire le padding */
+  }
+
+  .pricingCard {
+    width: 40%; /* Réduire encore la largeur des cartes */
+    margin: 0 auto; /* Centrer les cartes */
+    padding: 20px; /* Réduire le padding */
+    font-size: 0.9rem; /* Réduire la taille globale du texte */
+  }
+
+  .pricingCardHead h2 {
+    font-size: 1.2rem; /* Réduire la taille des titres des cartes */
+    margin-bottom: 5px;
+  }
+
+  .pricingCardDescription {
+    font-size: 0.8rem; /* Réduire la taille de la description */
+    margin-bottom: 5px;
+  }
+
+  .sentence {
+    font-size: 0.8rem; /* Réduire la taille des fonctionnalités */
+    margin-bottom: 5px;
+  }
+
+  .Price {
+    font-size: 0.8rem; /* Réduire la taille de la section prix */
+    margin: 10px 0;
+  }
+
+  .Price span {
+    font-size: 2rem; /* Réduire la taille du prix */
+  }
+
+  .buttonGetStarted {
+    padding: 0.6rem; /* Réduire le padding du bouton */
+    font-size: 0.9rem; /* Réduire la taille du texte du bouton */
+    width: 80%; /* Bouton légèrement plus petit */
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    margin-top: -5%;
+  }
+  .pricing_title {
+    font-size: 1.5rem; /* Réduire la taille du titre */
+  }
+  .pricing_head p {
+    font-size: 0.8rem; /* Réduire la taille du titre */
+  }
+
+  .pricingCardsSection {
+    flex-direction: column; /* Disposer les cartes en colonne */
+    align-items: center; /* Centrer les cartes */
+    gap: 10px; /* Réduire l'écart entre les cartes */
+  }
+
+  .pricingCard {
+    width: 50%; /* Réduire la largeur des cartes */
+    padding: 20px; /* Réduire le padding */
+    height: auto; /* Ajuster automatiquement la hauteur */
+    font-size: 0.9rem; /* Réduire la taille de la police pour tout le contenu */
+  }
+
+  .pricingCardHead h2 {
+    font-size: 1.2rem; /* Taille plus petite pour les titres des cartes */
+  }
+
+  .pricingCardDescription {
+    font-size: 0.8rem; /* Réduire la description */
+    margin-bottom: 5px; /* Espacement plus petit */
+  }
+
+  .sentence {
+    font-size: 0.7rem; /* Texte encore plus petit pour les fonctionnalités */
+    margin-bottom: 5px; /* Réduire l'espacement vertical */
+  }
+
+  .sectionImg {
+    width: 10px; /* Réduire la taille des icônes */
+    height: 10px;
+    margin-right: 5px; /* Réduire l'écart avec le texte */
+  }
+
+  .Price {
+    font-size: 0.8rem; /* Réduire la taille de la section prix */
+  }
+
+  .Price span {
+    font-size: 1.8rem; /* Taille réduite pour le prix */
+  }
+
+  .buttonGetStarted {
+    padding: 0.5rem 1rem; /* Réduire le padding des boutons */
+    font-size: 0.8rem; /* Réduire la taille du texte */
+    width: 70%; /* Réduire la largeur des boutons */
+  }
+}

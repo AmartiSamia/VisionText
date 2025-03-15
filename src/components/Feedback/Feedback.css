@@ -1,0 +1,193 @@
+/* Testimonials Section Styling */
+.testimonialsSection {
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the children horizontally */
+  text-align: center;
+}
+
+.testimonialsHeader h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.testimonialsHeader p {
+  font-size: 1rem;
+  color: #aaaaaa;
+  text-align: center; /* Ensure the text is centered */
+  max-width: 520px; /* Limit the width of the text for better readability */
+  margin: 0 auto 30px auto; /* Center the element horizontally */
+}
+
+.testimonialsList {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.testimonialCard {
+  background-color: #111026;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  background: linear-gradient(#111026, #111026) padding-box,
+    linear-gradient(135deg, #fae505, #c206e8, #023bf8, #fae505) border-box;
+  border: 1px solid transparent;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.testimonialCard:hover {
+  transform: scale(1.05);
+}
+
+.stars {
+  color: #5b29f8;
+  font-size: 1.8rem;
+  margin-bottom: -10px;
+}
+
+.feedback {
+  font-size: 1rem;
+  color: #cccccc;
+  margin-bottom: 15px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile h4 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.profile p {
+  margin: 0;
+  color: #aaaaaa;
+  font-size: 0.9rem;
+}
+@media (max-width: 1024px) {
+  .testimonialsSection {
+    padding: 20px;
+  }
+
+  .testimonialsHeader h1 {
+    font-size: 2rem; /* Réduire la taille du titre */
+  }
+
+  .testimonialsHeader p {
+    font-size: 0.9rem; /* Réduire la taille du texte */
+    max-width: 400px; /* Limiter la largeur du texte */
+  }
+
+  .testimonialsList {
+    gap: 15px; /* Réduire l'écart entre les cartes */
+  }
+
+  .testimonialCard {
+    width: 280px; /* Réduire la largeur des cartes */
+  }
+
+  .stars {
+    font-size: 1.5rem; /* Réduire la taille des étoiles */
+  }
+
+  .feedback {
+    font-size: 0.9rem; /* Réduire la taille du texte */
+  }
+
+  .profile img {
+    width: 40px; /* Réduire la taille de l'image de profil */
+    height: 40px;
+  }
+
+  .profile h4 {
+    font-size: 1rem; /* Réduire la taille du nom */
+  }
+
+  .profile p {
+    font-size: 0.8rem; /* Réduire la taille du titre */
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonialsHeader h1 {
+    font-size: 1.8rem; /* Réduire davantage la taille du titre */
+  }
+
+  .testimonialsHeader p {
+    font-size: 0.8rem;
+    max-width: 85%; /* Utiliser une largeur flexible */
+  }
+
+  .testimonialsList {
+    flex-direction: column; /* Empiler les cartes verticalement */
+    align-items: center; /* Centrer les cartes */
+  }
+
+  .testimonialCard {
+    width: 70%; /* Utiliser presque toute la largeur de l'écran */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonialsSection {
+    padding: 10px;
+  }
+
+  .testimonialsHeader h1 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .testimonialsHeader p {
+    font-size: 0.8rem;
+    max-width: 95%; /* Prendre toute la largeur disponible */
+  }
+
+  .testimonialCard {
+    width: 75%; /* Prendre toute la largeur */
+    padding: 15px; /* Réduire le padding */
+  }
+
+  .stars {
+    font-size: 1.2rem; /* Réduire la taille des étoiles */
+  }
+
+  .feedback {
+    font-size: 0.8rem; /* Texte encore plus petit */
+  }
+
+  .profile img {
+    width: 35px; /* Réduire davantage la taille des images */
+    height: 35px;
+  }
+
+  .profile h4 {
+    font-size: 0.9rem; /* Taille plus petite pour le nom */
+  }
+
+  .profile p {
+    font-size: 0.7rem; /* Taille plus petite pour le titre */
+  }
+}

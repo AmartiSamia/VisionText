@@ -1,0 +1,189 @@
+.MainContainer {
+  font-family: sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-items: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px;
+  margin-top: -5%;
+  margin-left: -15px;
+}
+
+.Container {
+  border-radius: 15px;
+  background-color: #111026;
+  font-family: "Montserrat", Arial, sans-serif;
+  padding: 20px;
+  padding-bottom: 0;
+  padding-top: 6px;
+  width: 55%;
+  font-weight: 200;
+  border: 1px solid;
+  height: 430px;
+  background: linear-gradient(#111026, #111026) padding-box,
+    linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box;
+  box-shadow: 0 1 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7, 0 0 30px #230bf9;
+  border-color: transparent;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+.ContainerPicture {
+  width: 30%;
+}
+.ContainerPicture img {
+  max-width: 90%;
+  max-height: 75%;
+}
+.ContainerPicture div h2,
+.Container h2 {
+  font-size: 1.2rem;
+}
+.ContainerGenerate {
+  width: 70%;
+}
+textarea {
+  width: 95%;
+  height: 300px;
+  background-color: #0d0c25;
+  color: white;
+  border: 1px solid #1e1c3d;
+  border-radius: 22px;
+  padding: 10px;
+  resize: none;
+  font-size: 0.9rem;
+  margin-bottom: -20px;
+}
+
+.buttonGenerate {
+  padding: 0.8rem 1.6rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: linear-gradient(170deg, #c206e8 30%, #540d6e, #3e06f5);
+  border: none;
+}
+
+.buttonGenerate:hover {
+  background: white;
+  color: #2c065d;
+  transform: scale(1.1);
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .MainContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .Container,
+  .ContainerPicture {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .GeneratedImage {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  .ContainerGenerate {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .MainContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .Container,
+  .ContainerPicture {
+    width: 100%; /* Prend toute la largeur de l'écran */
+    margin: 10px 0;
+  }
+
+  textarea {
+    font-size: 0.8rem; /* Ajuste la taille de la police */
+    height: 250px; /* Réduit la hauteur */
+  }
+
+  .GeneratedImage {
+    width: 100%;
+    height: auto; /* Maintient les proportions */
+    border-radius: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .MainContainer {
+    flex-direction: column; /* Empile les conteneurs verticalement */
+    justify-content: center; /* Centre les éléments verticalement */
+    align-items: center; /* Centre les éléments horizontalement */
+    padding: 10px; /* Réduit le padding */
+    margin-bottom: 35%;
+    text-align: center; /* Centre le texte */ /* Prend toute la hauteur de l'écran */
+  }
+
+  .Container,
+  .ContainerPicture {
+    width: 90%; /* Occupe 90% de la largeur de l'écran */
+    padding: 10px; /* Réduit le padding */
+    margin: 10px; /* Ajoute un espacement entre les sections */
+  }
+  .MainContainer .Container {
+    margin-left: 22px;
+  }
+  .ContainerGenerate {
+    width: 90%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  textarea {
+    font-size: 0.8rem; /* Ajuste la taille de la police */
+    height: 270px; /* Réduit la hauteur */
+    padding: 8px; /* Réduit le padding interne */
+    margin: 0; /* Centre le textarea */
+  }
+
+  .buttonGenerate {
+    font-size: 0.9rem; /* Ajuste la taille de la police */
+    padding: 0.6rem 1.2rem; /* Réduit le padding */
+    border-radius: 8px; /* Réduit les bords arrondis */
+    margin: 10px auto; /* Centre le bouton */
+    display: block; /* S'assure que le bouton occupe son propre espace */
+  }
+  .ContainerPicture {
+    height: 350px;
+    margin-left: 12px;
+  }
+  .GeneratedImage {
+    width: 100%; /* L'image prend toute la largeur du conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 8px; /* Ajuste les bords arrondis */
+    margin: 0 auto; /* Centre l'image */
+  }
+
+  h2 {
+    font-size: 1rem; /* Réduit la taille des titres */
+    text-align: center; /* Centre les titres */
+    margin-bottom: 10px; /* Ajoute de l'espace sous le titre */
+  }
+  .ContainerPicture {
+    max-width: 90%;
+    max-height: 100%;
+  }
+}

@@ -1,0 +1,34 @@
+h2 {
+  font-size: 2.1rem;
+}
+.section p {
+  max-width: 500px;
+}
+.section {
+  margin-left: 70px;
+}
+
+h2 span {
+  position: relative;
+}
+.curved-line2 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  height: 4.9rem;
+  width: 115%;
+}
+
+.section {
+  margin: 11%;
+  margin-top: 65px;
+}
+@media (max-width: 480px) {
+  .curved-line2 {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 4.9rem;
+    width: 105%;
+  }
+}

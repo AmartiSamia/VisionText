@@ -1,0 +1,471 @@
+.divPicture {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 4.5rem;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+}
+.section2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 4.5rem;
+  margin-top: 1rem;
+  margin-left: 15%;
+}
+.formBox2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* max-width: 550px; */
+  margin-left: 3.7rem;
+}
+.ImagesGenerate {
+  margin-left: -26%;
+  margin-top: -4%;
+  display: flex;
+  max-width: 1250px;
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+.formBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin-left: 3.7rem;
+}
+.sectionImages {
+  width: 45%;
+  margin-left: -13%;
+  height: auto;
+  max-width: 500px;
+}
+.elementformBox {
+  margin-top: 1.5rem;
+  margin-left: 35%;
+  display: flex;
+  justify-items: flex-start;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.formBox p,
+.formBox2 p {
+  margin-top: -13px;
+  color: #a0a0a0;
+  max-width: 220px;
+  z-index: 1000;
+}
+.sectionLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50%;
+  max-width: 450px;
+  border-radius: 20px;
+  padding: 0;
+  background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+    linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box; /* Border gradient */
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7, 0 0 30px #230bf9; /* Shadow */
+}
+
+.SignIn {
+  width: 100%;
+  background-color: black;
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+.sectionWork p {
+  text-align: center;
+  max-width: 500px;
+}
+.sectionWork {
+  position: relative;
+  padding: 1rem;
+  margin-top: -99px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  left: 0%;
+  display: flex;
+  justify-content: left;
+}
+.blueLine1 {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 3px;
+  display: flex;
+  background-color: #5023d0;
+}
+.line {
+  position: absolute;
+  left: 51%;
+  height: 7px;
+  top: 43%;
+}
+.blueLine2,
+.blueLine3,
+.blueLine4,
+.blueLine5 {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 3px;
+  background-color: #5023d0;
+  left: 50%;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+.blueLine2 {
+  top: 70%;
+}
+.blueLine3 {
+  top: 90%;
+}
+.blueLine4 {
+  top: 110%;
+}
+.blueLine5 {
+  top: 130%;
+}
+p a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.sectionGenerate .sectionLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 70%;
+  max-width: 1250px;
+  border-radius: 20px;
+  padding: 0;
+  background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+    linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box; /* Border gradient */
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7, 0 0 30px #230bf9; /* Shadow */
+}
+
+@media (max-width: 768px) {
+  .curved-line {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    height: 3.9rem;
+    width: 105%;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .blueLine2 {
+    top: 70%;
+  }
+  .blueLine3 {
+    top: 85%;
+  }
+  .blueLine4 {
+    top: 100%;
+  }
+  .blueLine5 {
+    top: 115%;
+  }
+  .line {
+    position: absolute;
+    left: 50%;
+    top: 42%;
+  }
+  .sectionLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%; /* Adjust width for alignment */
+    max-width: 350px;
+    border-radius: 20px;
+    padding: 0; /* Remove any extra padding */
+    background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+      linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box; /* Border gradient */
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7,
+      0 0 30px #230bf9; /* Shadow */
+  }
+  .divPicture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 4.5rem;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    max-width: 1150px;
+  }
+  .formBox {
+    position: relative;
+    display: flex;
+
+    /* flex-direction: column; */
+    max-width: 200px;
+    margin-left: -2%;
+  }
+
+  .blueLine1 {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 2px;
+    background-color: #5023d0;
+  }
+  .blueLine2,
+  .blueLine3,
+  .blueLine4,
+  .blueLine5 {
+    transform: rotate(90deg);
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 2px;
+    background-color: #5023d0;
+    left: 55%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  .elementformBox {
+    margin-top: 1.5rem;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+  }
+  .blueLine2 {
+    top: 70%;
+  }
+  .blueLine3 {
+    top: 90%;
+  }
+  .blueLine4 {
+    top: 110%;
+  }
+  .blueLine5 {
+    top: 130%;
+  }
+
+  .sectionGenerate .sectionLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    max-width: 1250px;
+    border-radius: 20px;
+    padding: 0;
+    background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+      linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box; /* Border gradient */
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7,
+      0 0 30px #230bf9; /* Shadow */
+  }
+
+  .section2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: -0%;
+  }
+  .sectionImages .sectionGenerate {
+    width: 100%;
+    margin-left: -30%;
+    height: auto;
+  }
+  .formBox2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 550px; */
+    margin-left: 0.7rem;
+    margin-right: -10%;
+  }
+  .sectionImages {
+    max-width: 90%; /* Réduit la largeur pour les écrans moyens */
+  }
+
+  .sectionImages img {
+    max-width: 100%; /* Laisse l'image occuper tout l'espace disponible */
+  }
+}
+@media (max-width: 480px) {
+  .divPicture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 4.5rem;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    max-width: 1250px;
+  }
+  .sectionWork {
+    margin-top: 0.5rem;
+  }
+  .formBox {
+    position: relative;
+    display: flex;
+    max-width: 30%;
+    margin-left: -3rem;
+    font-size: 16px;
+  }
+
+  .blueLine1 {
+    position: absolute;
+    content: "";
+    margin-left: 6%;
+    width: 7px;
+    height: 2px;
+    transform: rotate(180deg);
+    background-color: #5023d0;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+  .blueLine2,
+  .blueLine3,
+  .blueLine4,
+  .blueLine5 {
+    transform: rotate(90deg);
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 2px;
+    background-color: #5023d0;
+    left: 70%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+  }
+  .elementformBox {
+    margin-top: 1.5rem;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .elementformBox p {
+    font-size: 0.6rem;
+  }
+  .elementformBox h2 {
+    font-size: 1.2rem;
+  }
+  .formBox .blueLine2 {
+    top: 70%;
+    /* left: 42%; */
+  }
+  .formBox .blueLine3 {
+    top: 85%;
+    /* left: 42%; */
+  }
+  .formBox .line {
+    position: absolute;
+    left: 35%;
+    /* top: 35%; */
+  }
+  .formBox .blueLine4 {
+    top: 100%;
+    /* left: 42%; */
+  }
+  .formBox .blueLine5 {
+    top: 115%;
+    /* left: 42%; */
+  }
+  .formBox2 .blueLine2 {
+    top: 70%;
+    left: 42%;
+  }
+  .formBox2 .blueLine3 {
+    top: 85%;
+    left: 42%;
+  }
+  .line {
+    position: absolute;
+    left: 35%;
+    top: 40%;
+  }
+  .formBox2 .blueLine4 {
+    top: 100%;
+    left: 42%;
+  }
+  .formBox2 .blueLine5 {
+    top: 115%;
+    left: 42%;
+  }
+
+  .sectionGenerate .sectionLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 110%;
+    max-width: 1250px;
+    border-radius: 20px;
+    /* margin-right: 15%; */
+    padding: 0;
+    background: linear-gradient(#0c0c0f, #0c0c0f) padding-box,
+      linear-gradient(135deg, #023bf8, #c206e8, #fae505) border-box; /* Border gradient */
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3), 0 0 15px #fb09e7,
+      0 0 30px #230bf9; /* Shadow */
+  }
+
+  .section2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-right: 3%;
+  }
+  .sectionImages .sectionGenerate {
+    width: 100%;
+    margin-left: -40%;
+    margin-top: 3%;
+    height: auto;
+  }
+  .formBox2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin-right: -30%;
+  }
+  .sectionImages {
+    max-width: 95%;
+  }
+
+  .sectionImages img {
+    max-width: 100%;
+  }
+}
