@@ -117,7 +117,7 @@ const NavBar = () => {
     setSignInMessage({ type: "success", text: "Login successful!" });
   
     // Redirect to the generate page after successful login
-    navigate("https://visiontext.vercel.app/generate");
+    navigate("/generate");
   };
   
 
