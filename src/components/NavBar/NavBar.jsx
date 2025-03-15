@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import { jwtDecode } from "jwt-decode"; // Import correctly as named export
 import "./SignInSignUp.css";
 import "./NavBar.css";
@@ -104,19 +103,7 @@ const NavBar = () => {
       return;
     }
 
-    try {
-      await axios.post("http://127.0.0.1:8000/api/authentication/signup/", {
-        name,
-        email,
-        password,
-      });
-      setSignUpMessage({
-        type: "success",
-        text: "Signup successful! Now Sign In please",
-      });
-    } catch (error) {
-      console.error("Signup error:", error.response?.data);
-
+   
       // Vérifier et formater les erreurs provenant du backend
       const errors = error.response?.data;
       let errorMessage = "Signup failed. Please try again.";
@@ -151,41 +138,7 @@ const NavBar = () => {
       return;
     }
 
-    try {
-      const response = await axios.post(
-        "http://127.0.0.1:8000/api/authentication/signin/",
-        { email, password }
-      );
-
-      localStorage.setItem("access", response.data.access);
-      localStorage.setItem("refresh", response.data.refresh);
-
-      const decoded = jwtDecode(response.data.access); // Correct usage
-      setUser({ name: decoded.name, email: decoded.email });
-      setSignInMessage({ type: "success", text: "Welcome Back!" });
-      navigate("/generate");
-    } catch (error) {
-      console.error("Signin error:", error.response?.data);
-
-      const errors = error.response?.data;
-      let errorMessage = "Signin failed. Please try again.";
-      if (errors) {
-        errorMessage = Object.entries(errors)
-          .map(([field, messages]) => {
-            if (Array.isArray(messages)) {
-              return `${field}: ${messages.join(", ")}`;
-            } else if (typeof messages === "string") {
-              return `${field}: ${messages}`;
-            } else {
-              return `${field}: Invalid data`;
-            }
-          })
-          .join(" ");
-      }
-
-      setSignInMessage({ type: "error", text: errorMessage });
-    }
-  };
+    
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
