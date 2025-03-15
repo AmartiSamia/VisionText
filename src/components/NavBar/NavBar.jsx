@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { jwtDecode } from "jwt-decode"; // Import correctly as named export
 import "./SignInSignUp.css";
 import "./NavBar.css";
 import eyeOpen from "./eye_open.png"; // Add the path to the eye open image
@@ -25,20 +24,12 @@ const NavBar = () => {
   useEffect(() => {
     const token = localStorage.getItem("access");
     if (token) {
-      try {
-        const decoded = jwtDecode(token); // Correct usage
-        setUser({ name: decoded.name, email: decoded.email });
-      } catch (error) {
-        console.error("Invalid token:", error);
-        localStorage.removeItem("access");
-        localStorage.removeItem("refresh");
-      }
+      setUser({ name: "User", email: "user@example.com" }); // Simulating logged-in user
     }
   }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("access");
-    localStorage.removeItem("refresh");
     setUser(null);
     navigate("/");
   };
@@ -103,28 +94,10 @@ const NavBar = () => {
       return;
     }
 
-   
-      // Vérifier et formater les erreurs provenant du backend
-      const errors = error.response?.data;
-      let errorMessage = "Signup failed. Please try again.";
-      if (errors) {
-        errorMessage = Object.entries(errors)
-          .map(([field, messages]) => {
-            // Vérifier si 'messages' est une liste ou une chaîne
-            if (Array.isArray(messages)) {
-              return `${field}: ${messages.join(", ")}`;
-            } else if (typeof messages === "string") {
-              return `${field}: ${messages}`;
-            } else {
-              return `${field}: Invalid data`;
-            }
-          })
-          .join(" ");
-      }
-
-      setSignUpMessage({ type: "error", text: errorMessage });
-    }
+    // Simulate a successful sign-up process
+    setSignUpMessage({ type: "success", text: "Signup successful!" });
   };
+
   const handleSignIn = async (event) => {
     event.preventDefault();
     const email = document.getElementById("email").value;
@@ -138,7 +111,11 @@ const NavBar = () => {
       return;
     }
 
-    
+    // Simulate a successful login process
+    localStorage.setItem("access", "fakeAccessToken");
+    setUser({ name: "User", email: email });
+    setSignInMessage({ type: "success", text: "Login successful!" });
+  };
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
@@ -165,7 +142,6 @@ const NavBar = () => {
             alt="Logo"
             className="logo"
           />
-
           <span className="app-name">VisionText</span>
         </div>
         <button className="menu-toggle" onClick={toggleMenu}>
