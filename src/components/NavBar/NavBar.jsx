@@ -102,7 +102,7 @@ const NavBar = () => {
     event.preventDefault();
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-
+  
     if (!email || !password) {
       setSignInMessage({
         type: "error",
@@ -110,12 +110,16 @@ const NavBar = () => {
       });
       return;
     }
-
+  
     // Simulate a successful login process
     localStorage.setItem("access", "fakeAccessToken");
     setUser({ name: "User", email: email });
     setSignInMessage({ type: "success", text: "Login successful!" });
+  
+    // Redirect to the generate page after successful login
+    navigate("https://visiontext.vercel.app/generate");
   };
+  
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
