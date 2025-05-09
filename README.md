@@ -1,1 +1,4 @@
-﻿# VisionText is an AI-powered platform that generates images from text prompts using Stable Diffusion. Built with Django, Django REST Framework, and React, it leverages PyTorch and Hugging Face APIs to deliver real-time image generation for content creators and designers.
+# VisionText (Frontend)
+
+VisionText is an AI-powered platform that generates images from text prompts using Stable Diffusion.  
+This is the frontend of the application, built with React to provide a clean and responsive user interface for real-time image generation.
